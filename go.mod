@@ -1,6 +1,6 @@
 module github.com/educabot/team-ai-toolkit
 
-go 1.26.1
+go 1.25.8
 
 require (
 	github.com/bugsnag/bugsnag-go-gin v1.0.0
