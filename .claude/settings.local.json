@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(go build:*)",
+      "Bash(where go:*)",
+      "Read(//c/Program Files/Go/bin/**)",
+      "Read(//c/Go/bin/**)",
+      "Read(//c/Users/Educabot/**)",
+      "Bash(cmd.exe /c \"where go\" 2>&1)",
+      "Bash(curl:*)",
+      "Read(//tmp/**)",
+      "Bash(\"/c/Program Files/Go/bin/go.exe\" version)",
+      "Bash(export PATH=\"/c/Program Files/Go/bin:$PATH\")",
+      "Bash(go version:*)",
+      "Bash(powershell.exe -Command \"Start-Process msiexec.exe -ArgumentList '/i','C:\\\\\\\\Users\\\\\\\\Educabot\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\go-installer.msi','/quiet','/norestart' -Verb RunAs -Wait\" 2>&1)",
+      "Bash(mkdir -p \"/c/Users/Educabot/go-sdk\")",
+      "Bash(tar -xf go-installer.msi)",
+      "Bash(rm -rf \"/c/Users/Educabot/go-sdk/go\")",
+      "Bash(unzip -q /tmp/go.zip -d \"/c/Users/Educabot/go-sdk/\")",
+      "Bash(\"/c/Users/Educabot/go-sdk/go/bin/go.exe\" version:*)",
+      "Bash(\"/c/Users/Educabot/go-sdk/go/bin/go.exe\" mod:*)",
+      "Bash(\"/c/Users/Educabot/go-sdk/go/bin/go.exe\" build:*)",
+      "Bash(\"/c/Users/Educabot/go-sdk/go/bin/go.exe\" test:*)",
+      "Bash(\"/c/Users/Educabot/go-sdk/go/bin/go.exe\" tool:*)",
+      "Bash(powershell.exe -Command \"[Environment]::GetEnvironmentVariable\\('Path', 'User'\\)\")",
+      "Bash(powershell.exe -Command \"\\\\$currentPath = [Environment]::GetEnvironmentVariable\\('Path', 'User'\\); \\\\$newPath = \\\\$currentPath -replace 'C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\Educabot\\\\\\\\\\\\\\\\go\\\\\\\\\\\\\\\\bin', 'C:\\\\\\\\Users\\\\\\\\Educabot\\\\\\\\go-sdk\\\\\\\\go\\\\\\\\bin'; [Environment]::SetEnvironmentVariable\\('Path', \\\\$newPath, 'User'\\); Write-Output 'Done'\")",
+      "Bash(powershell.exe -Command '$p = [Environment]::GetEnvironmentVariable\\(\"Path\", \"User\"\\); $p = $p.Replace\\(\"C:\\\\Users\\\\Educabot\\\\go\\\\bin\", \"C:\\\\Users\\\\Educabot\\\\go-sdk\\\\go\\\\bin\"\\); [Environment]::SetEnvironmentVariable\\(\"Path\", $p, \"User\"\\); echo \"OK\"')"
+    ]
+  }
+}
